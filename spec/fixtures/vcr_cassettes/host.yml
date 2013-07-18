@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://user:pass@foreman.local/hosts/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Jan 2013 11:32:19 GMT
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 2.0.0
+      X-Runtime:
+      - '0.002222'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - abcdefghijklmnoprst
+      X-Rack-Cache:
+      - miss
+      Etag:
+      - '"abcdefghijklmnoprst"'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Set-Cookie:
+      - _session_id=abcdefghijklmnoprst; path=/; HttpOnly
+      Status:
+      - '200'
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"host":{"image_file":"","owner_id":3,"ptable_id":1,"location_id":null,"serial":null,"model_id":1,"operatingsystem_id":2,"puppet_status":100000008,"interfaces":[],"created_at":"2013-01-01T09:52:13Z","disk":"","image_id":1,"medium_id":1,"compute_resource_id":1,"domain_id":1,"hostgroup_id":1,"puppet_proxy_id":1,"updated_at":"2013-01-01T12:46:48Z","last_compile":"2013-01-01T12:46:24Z","root_pass":"pass","subnet_id":null,"enabled":true,"environment":{"environment":{"id":1,"name":"test"}},"id":4,"ip":"1.2.3.4","managed":true,"organization_id":null,"use_image":null,"environment_id":1,"last_freshcheck":null,"name":"node002.local","build":false,"comment":"","last_report":"2013-01-01T12:46:15Z","source_file_id":null,"uuid":"i-abcdef","architecture_id":1,"installed_at":"2013-01-01T09:55:28Z","mac":"00:00:00:00:00:00","host_parameters":[{"host_parameter":{"priority":1,"reference_id":4,"created_at":"2013-01-01T09:52:13Z","updated_at":"2013-01-01T09:52:13Z","value":"test","id":12,"name":"custom_parameter_1"}},{"host_parameter":{"priority":4,"reference_id":4,"created_at":"2013-01-01T09:52:13Z","updated_at":"2013-01-01T09:52:13Z","value":"test","id":10,"name":"custom_parameter_2"}}],"certname":"node002.local","owner_type":"User","puppet_ca_proxy_id":1}}'
+    http_version: 
+  recorded_at: Wed, 01 Jan 2013 11:12:20 GMT
+recorded_with: VCR 2.5.0
