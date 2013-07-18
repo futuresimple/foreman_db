@@ -9,6 +9,7 @@ module ForemanDB
     def self.find_by_id(id)
       host = self.new(id)
       host.fetch
+      host
     end
 
     def fetch

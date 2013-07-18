@@ -6,8 +6,8 @@ describe "Query search host information" do
     VCR.use_cassette('search') do
       search = ForemanDB::Search.search("params.custom_parameter_2 = test")
       search.results.should_not be_empty
-      search.results.first["ip"].should be_kind_of(String)
-      search.results.first["ip"].should_not be_empty
+      search.results.first.attributes["ip"].should be_kind_of(String)
+      search.results.first.attributes["ip"].should_not be_empty
     end
   end
 end

@@ -5,7 +5,7 @@ describe "Query host information" do
   it "returns host" do
     VCR.use_cassette('host') do
       host = ForemanDB::Host.find_by_id(4)
-      host["ip"].should eq("1.2.3.4")
+      host.attributes["ip"].should eq("1.2.3.4")
     end
   end
 end
